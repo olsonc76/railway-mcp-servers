@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "fetch": {
-      "command": "mcp-server-fetch",
-      "args": [],
+    "trello": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-trello"],
       "env": {}
     },
     "memory": {
