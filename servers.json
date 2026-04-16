@@ -2,7 +2,10 @@
   "mcpServers": {
     "trello": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-trello"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/mcp-server-trello"
+      ],
       "env": {}
     },
     "memory": {
