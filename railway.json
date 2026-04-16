@@ -1,14 +1,12 @@
 {
-  "$schema": "https://railway.com/railway.schema.json",
+  "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+    "builder": "DOCKERFILE"
   },
   "deploy": {
-    "healthcheckPath": "/sse",
+    "startCommand": "mcp-proxy",
+    "healthcheckPath": "/status",
     "healthcheckTimeout": 300,
-    "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 3,
-    "requiredMountPath": "/data"
+    "restartPolicyType": "ON_FAILURE"
   }
 }
